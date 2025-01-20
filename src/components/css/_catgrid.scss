@@ -1,0 +1,88 @@
+.cat-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 3.875rem;
+    
+  @media (max-width: 90rem) {
+    margin: 3rem 5%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  @media (max-width: 72rem) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 54rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 48rem) {
+    margin: 3rem auto;
+  }
+  @media (max-width: 38rem) {
+    grid-template-columns: 1fr;
+  }
+  }
+  
+  .cat-item {
+    width: 14.0625rem;
+    height: 14.0625rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+  }
+  
+  .cat-item:hover {
+    transform: scale(1.14);
+    box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .heart-icon {
+    position: absolute;
+    bottom: 1rem;
+    right: 1.1875rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 0 0.3rem black;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .cat-item:hover .heart-icon {
+    opacity: 1;
+  }
+
+ .heart-icon svg{ 
+      transition: all 0.8s ease;
+      fill: transparent;
+      stroke: red;
+  }
+  
+  .heart-icon.active , .heart-icon:hover{
+    svg {
+      color: red;
+      fill: red;
+    }
+  }
+  
+  .load {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .load-button {
+    font-size: 0.875rem;
+    border: none;
+    background-color: none;
+    background: none;
+    cursor: pointer;
+
+  }
+  

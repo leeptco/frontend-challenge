@@ -1,0 +1,20 @@
+@import 'header';
+@import 'catgrid';
+
+:root {
+    --main-header:  #2196F3;
+    --active-header: #1E88E5;
+    --hover-header: #1e88e56a;
+    --text-header: #d0d0d0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}

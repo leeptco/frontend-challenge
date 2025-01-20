@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  background-color: var(--main-header);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin-left: 3.875rem;
+  padding: 0;
+
+  @media (max-width: 90rem) {
+    margin-left: 5%;
+  }
+  @media (max-width: 48rem) { 
+    margin: 0 auto;
+  }
+}
+
+.nav-item {
+  justify-content: center;
+}
+
+.tab {
+  cursor: pointer;
+  color: white;
+  font-size: 0.875rem;
+  padding: 1.4375rem 0;
+  line-height: 1.125rem;
+  letter-spacing: 0.25px;
+  background: none;
+  border: none;
+  min-width: 7.5rem;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.tablong {
+  min-width: 10.8125rem;
+}
+
+.tab.active {
+  background-color: var(--active-header);
+}
+
+.tab:hover {
+  background-color: var(--hover-header);
+  color: var(--text-header);
+}

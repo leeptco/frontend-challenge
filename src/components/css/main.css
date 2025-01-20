@@ -1,0 +1,168 @@
+.header {
+  display: flex;
+  background-color: var(--main-header);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin-left: 3.875rem;
+  padding: 0;
+}
+@media (max-width: 90rem) {
+  .nav-list {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 48rem) {
+  .nav-list {
+    margin: 0 auto;
+  }
+}
+
+.nav-item {
+  justify-content: center;
+}
+
+.tab {
+  cursor: pointer;
+  color: white;
+  font-size: 0.875rem;
+  padding: 1.4375rem 0;
+  line-height: 1.125rem;
+  letter-spacing: 0.25px;
+  background: none;
+  border: none;
+  min-width: 7.5rem;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.tablong {
+  min-width: 10.8125rem;
+}
+
+.tab.active {
+  background-color: var(--active-header);
+}
+
+.tab:hover {
+  background-color: var(--hover-header);
+  color: var(--text-header);
+}
+
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 3.875rem;
+}
+@media (max-width: 90rem) {
+  .cat-grid {
+    margin: 3rem 5%;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 72rem) {
+  .cat-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 54rem) {
+  .cat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 48rem) {
+  .cat-grid {
+    margin: 3rem auto;
+  }
+}
+@media (max-width: 38rem) {
+  .cat-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cat-item {
+  width: 14.0625rem;
+  height: 14.0625rem;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+}
+
+.cat-item:hover {
+  transform: scale(1.14);
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5);
+}
+
+.heart-icon {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.1875rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  text-shadow: 0 0 0.3rem black;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.cat-item:hover .heart-icon {
+  opacity: 1;
+}
+
+.heart-icon svg {
+  transition: all 0.8s ease;
+  fill: transparent;
+  stroke: red;
+}
+
+.heart-icon.active svg, .heart-icon:hover svg {
+  color: red;
+  fill: red;
+}
+
+.load {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.load-button {
+  font-size: 0.875rem;
+  border: none;
+  background-color: none;
+  background: none;
+  cursor: pointer;
+}
+
+:root {
+  --main-header: #2196F3;
+  --active-header: #1E88E5;
+  --hover-header: #1e88e56a;
+  --text-header: #d0d0d0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}/*# sourceMappingURL=main.css.map */
